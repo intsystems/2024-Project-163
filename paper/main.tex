@@ -74,7 +74,17 @@ pdfkeywords={First keyword, Second keyword, More},
 
 % \keywords{First keyword \and Second keyword \and More}
 
-% \section{Introduction}
+\section{Introduction}
+
+\section{Problem statement}
+\begin{enumerate}
+    \item $(\textbf M, \textbf Y) \in \mathcal{D}$ -- Dataset
+    \item $\textbf M, \textbf Y \in \mathbb{R}^{k \times k}$, $\textbf Y=\mathcal{F}(\textbf M)$ -- MRI image and its Fourier transformation
+    \item $I: \mathbb{R}^{k \times k} \longrightarrow \mathbb{R}^{k \times k}$ -- Filter function, which preserves other elements and zeroes other
+\end{enumerate}
+The goal is to find function $B^*: \mathbb{R}^{k \times k} \longrightarrow \mathbb{R}^{k \times k}$ which minimizes the risk over the image distribution:
+\[B^* = argmin_B R(B)\] where
+ \[ R(B)= \mathbb{E}_{\textbf Y, \textbf M}[L(B(I(\textbf Y)), \textbf M)]\]
 % \lipsum[2]
 % \lipsum[3]
 
