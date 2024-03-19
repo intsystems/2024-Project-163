@@ -120,3 +120,15 @@ logs/
 */mnist
 *.csv
 !.dvc
+/slides/slides.aux
+/slides/slides.log
+/slides/slides.nav
+/slides/slides.out
+/slides/slides.toc
+/slides/slides.snm
+/slides/slides.synctex.gz
+/paper/BairMikhailov2024UndersampledMRIReconstruction.aux
+/paper/BairMikhailov2024UndersampledMRIReconstruction.log
+/paper/BairMikhailov2024UndersampledMRIReconstruction.out
+/paper/BairMikhailov2024UndersampledMRIReconstruction.synctex.gz
+/paper/references.bib.bak
