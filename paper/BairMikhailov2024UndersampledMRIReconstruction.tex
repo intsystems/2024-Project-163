@@ -13,8 +13,6 @@
 \usepackage{natbib}
 \usepackage{doi}
 
-
-
 \title{Undersampled MRI reconstruction}
 
 \author{Bair Mikhailov \\
@@ -75,7 +73,9 @@ pdfkeywords={First keyword, Second keyword, More},
 % \keywords{First keyword \and Second keyword \and More}
 
 \section{Introduction}
-
+In MRI machines, the spectrum of the object under study (so-called k-space, corresponding to the Fourier spectrum of the image) is read to obtain an image. Full k-space data is required for correct image reconstruction. Obtaining complete k-space takes a lot of time, to speed up MRI reconstruction is performed from incomplete k-space (also called undersampled MRI) using compressed sensing or deep learning methods. In the case of incomplete k-space, there is also the question of how much of the k-space should be measured and how much should be skipped (undersampled pattern optimization). Recent studies  have shown that for accelerated MRI, k-space pattern optimization for specific data (specific modality, organs) improves reconstructed images compared to standard sampling patterns.
+ 
+ This project proposes to further investigate the issue of accelerated MRI reconstruction, namely the optimization of magnetic field gradient configuration. Medical MRI machines use a constant field gradient - in this case, the resulting k-space data corresponds to the Fourier spectrum of the image. This project will investigate the possibility of optimizing the magnetic field gradient to improve the quality of accelerated MRI reconstruction
 \section{Problem statement}
 \begin{enumerate}
     \item $(\textbf M, \textbf Y) \in \mathcal{D}$ -- Dataset
